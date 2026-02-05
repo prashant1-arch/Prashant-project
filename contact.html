@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infopark|Contact us</title>
+
+    <!-- Fontawesome link to appear fonts to our website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS (single include) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <style>
+        /* Login page start */
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+     
+    }
+    .logo img{
+        width: 100%;
+        padding: none;
+        margin: none;
+        height: 180px;
+
+    }
+    :root{
+max-width:var(--max-width);
+padding:36px;
+border-radius:8px;
+}
+h1{
+margin:0 0 10px 0;
+font-size:28px;
+letter-spacing:0.2px;
+}
+
+form{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:var(--gap);
+align-items:start;
+
+}
+label{
+display:block;
+font-weight:600;
+font-size:14px;
+margin-bottom:8px;
+}
+.required:after{
+    content:" *";
+     color:var(--accent);
+      font-weight:700
+    }
+.field{
+margin-bottom:8px;
+}
+input[type=text],
+ input[type=email]
+{
+width:80%;
+padding:12px 14px;
+border:1px solid black;
+border-radius:2px;
+outline: 1px;;
+font-size:14px;
+color:#333;
+}
+textarea{
+width:100%;
+}
+input::placeholder,
+ textarea::placeholder{
+    color:var(--muted)
+}
+textarea{
+    min-height:120px; resize:vertical
+}
+.full{
+grid-column:1 / -1;
+}
+.row-right{
+display:flex;
+ gap:12px;
+  align-items:center;
+}
+.submit-btn{
+background:var(--accent);
+color:#fff;
+padding:10px 18px;
+border:none;
+border-radius:4px;
+font-weight:600;
+cursor:pointer;
+display:inline-block;
+box-shadow:0 1px 0 rgba(0,0,0,0.05);
+}
+.left-group{
+    display:grid;
+     gap:18px
+    }
+.right-group{
+    display:grid; 
+    gap:18px
+}
+/* responsive */
+@media (max-width:820px){
+form{grid-template-columns:1fr}
+.accent-line{margin-bottom:20px}
+}
+.btn button{
+    background-color: red;
+    height: 40px;
+    width: 27%;
+    border: none;
+    outline: none;
+}
+.btn button:hover{
+    background-color: yellow;
+}
+/* Login page end */
+   /* About start */
+
+ 
+ h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: #e63946;
+      margin-top: 5px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    .italic {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .help {
+      color: #ff9900;
+      font-weight: bold;
+    }
+
+    .payment {
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    .call {
+      color: #ff9900;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 15px;
+    }
+
+/* Footer start */
+     footer {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 60px 10%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 40px;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    /* Left About Section */
+    .footer-about img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .footer-about p {
+        line-height: 1.6;
+        color: #ccc;
+        font-size: 14px;
+    }
+
+    .footer-about a {
+        color: red;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    /* Column Titles */
+    .footer-title {
+        font-weight: bold;
+        color: #ffcc00;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .footer-title::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: red;
+        margin-top: 5px;
+    }
+
+    /* Lists */
+    ul {
+        list-style: none;
+        margin-top: 10px;
+        color: white;
+    }
+    .footer-news ul li a{
+        color: white;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        color: white;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+    ul li a:hover {
+        color: red;
+    }
+         .footer-links ul li a:hover{
+        color: red;
+    }
+       .footer-links ul li a{
+        color: white;
+    }
+
+    /* Contact Info */
+    .contact p {
+        color: #ccc;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        margin-top: 10px;
+    }
+
+    .newsletter input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 70%;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .newsletter button {
+        background-color: red;
+        border: none;
+        padding: 10px 15px;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 0 3px 3px 0;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: none;
+        background-color: #222;
+        color: #fff;
+        padding: 8px 10px;
+        border-radius: 3px;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+
+   
+    .social-icons a:hover {
+        background-color: red;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+        footer {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+        footer {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .newsletter input {
+            width: 60%;
+        }
+    }
+
+    /* About end */
+    </style>
+</head>
+<body>
+    <!--Header section start-->
+    <header class="head-opt">
+        <ul id="ul">
+            <li> 📞+91 9532085505 </li>
+            <li> 🕛Mon-Fri 8:00 to 2:00</li>
+            <li>📩info@infopark.co.in</li>
+        </ul>
+    </header>
+
+    <!--Header section end-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myHeader">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="photo\logo.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">BCA</a></li>
+                            <li><a class="dropdown-item" href="#">BBA</a></li>
+                            <li><a class="dropdown-item" href="#">BCA plus diploma</a></li>
+                            <li><a class="dropdown-item" href="#">'O' lavel</a></li>
+                            <li><a class="dropdown-item" href="#">DCA</a></li>
+                            <li><a class="dropdown-item" href="#">CCC</a></li>
+                            <li><a class="dropdown-item" href="#">MCA</a></li>
+                            <li><a class="dropdown-item" href="#">MBA</a></li>
+                            <li><a class="dropdown-item" href="#">MBA plus diploma</a></li>
+                            <li><a class="dropdown-item" href="#">PGDBM</a></li>
+                            <li><a class="dropdown-item" href="#">PGDCA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="logo">
+       
+        <main class="card" role="main">
+<h1>Interested in discussing?</h1>
+
+<form action="#" method="post" novalidate>
+<div class="left-group">
+<div>
+<label class="required">Name</label>
+<input type="text" name="name" placeholder="Enter Name" required>
+</div>
+
+
+<div>
+<label class="required">Subject</label>
+<input type="text" name="subject" placeholder="Enter Subject" required>
+</div>
+
+
+</div>
+
+
+<div class="right-group">
+<div>
+<label class="required">Email</label>
+<input type="email" name="email" placeholder="Enter Email" required>
+</div>
+
+
+<div>
+<label>Phone</label>
+<input type="text" name="phone" placeholder="Enter Phone">
+</div>
+</div>
+
+
+<div class="full">
+<label>Message</label>
+<textarea name="message" placeholder="Enter Message"></textarea>
+</div>
+
+
+<div class="full">
+<button class="submit-btn" type="submit">Send your message</button>
+</div>
+</form>
+
+
+</main>
+    <div class="btn">
+<button onclick="">Send Your Massage</button>
+</div>
+    </div>
+     <h2>24/7 SERVICE AVAILABLE!</h2>
+
+  <p class="italic">
+    Need assistance at any hour of the day? We’ve got you covered! Our dedicated team is here around the clock to help you with any queries or concerns you may have.
+  </p>
+
+  <p><span class="help">Online Help Desk:</span> Whether it's troubleshooting, guidance, or simply a question, our online help desk is ready to assist you promptly. Reach out anytime, anywhere!</p>
+
+  <p><span class="payment">Online Payment:</span> Make secure payments conveniently through our online platform. Enjoy hassle-free transactions with just a few clicks, ensuring a seamless experience every time.</p>
+
+  <p><span class="call">Call Us:</span> Have an urgent matter or prefer speaking directly to a representative? Give us a call at <b>+91 9532085505</b>. Our friendly team is standing by to provide the support you need.</p>
+
+  <p class="footer">
+    Your satisfaction is our priority, and we're here to make sure your experience with us is smooth and satisfying. Don’t hesitate to reach out—we’re here for you 24/7!
+  </p>
+
+  <!-- Footer start -->
+<footer>
+  <div class="footer-about">
+        <img src="photo/logo.png" alt="Infopark Logo">
+        <p>
+            Join us at Infopark and unlock your potential in the world of innovation. 
+            Embark on a journey into the future by delving into a realm of endless opportunities 
+            through education and networking. Together, we continue to shape the next 25 years 
+            of innovation and success.
+        </p>
+        <a href="#">» Read more</a>
+
+
+        <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Latest News -->
+    <div class="footer-news">
+        <h3 class="footer-title">Latest News</h3>
+        <ul>
+            <li><a href="#">BCA</a></li>
+            <li><a href="#">BBA</a></li>
+            <li><a href="#">BCA Plus Diploma</a></li>
+            <li><a href="#">‘O’ Level</a></li>
+            <li><a href="#">DCA</a></li>
+            <li><a href="#">CCC</a></li>
+            <li><a href="#">MCA</a></li>
+            <li><a href="#">MBA</a></li>
+            <li><a href="#">MBA Plus Diploma</a></li>
+            <li><a href="#">PGDBM</a></li>
+            <li><a href="#">PGDCA</a></li>
+        </ul>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-links">
+        <h3 class="footer-title">Useful Links</h3>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Quick Contact -->
+    <div class="contact">
+        <h3 class="footer-title">Quick Contact</h3>
+        <p>📞 +91 9532085505</p>
+        <p>✉ info@infopark.co.in</p>
+        <p>📍 Tulsi Nagar Near City Center Station Road Orai Dist. Jalaun (U.P) Pin Code - 285001</p>
+
+        <div class="newsletter">
+            <p>Subscribe to our newsletter</p>
+            <input type="email" placeholder="Your Email">
+            <button>✈</button>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var header = document.getElementById("myHeader");
+    if (!header) return;
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            document.body.style.paddingTop = header.offsetHeight + "px";
+        } else {
+            header.classList.remove("sticky");
+            document.body.style.paddingTop = 0;
+        }
+    }
+
+    window.addEventListener('scroll', myFunction);
+    window.addEventListener('resize', function () {
+        header.classList.remove('sticky');
+        document.body.style.paddingTop = 0;
+        sticky = header.offsetTop;
+        myFunction();
+    });
+
+    myFunction();
+});
+</script>
+</body>
+</html>

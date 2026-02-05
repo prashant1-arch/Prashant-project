@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infopark|About</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="icon" href="logo.png">
+
+  <!-- Fontawesome link to appear fonts to our website -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS (single include) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about img {
+      width: 100%;
+      height: 230px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      gap: 40px;
+    }
+
+    .left, .right {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    h1, h2 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    h1 span, h2 span {
+      color: #f5b400; /* Golden yellow */
+    }
+
+    h3 {
+      color: #222;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+     footer {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 60px 10%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 40px;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    /* Left About Section */
+    .footer-about img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .footer-about p {
+        line-height: 1.6;
+        color: #ccc;
+        font-size: 14px;
+    }
+
+    .footer-about a {
+        color: red;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    /* Column Titles */
+    .footer-title {
+        font-weight: bold;
+        color: #ffcc00;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .footer-title::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: red;
+        margin-top: 5px;
+    }
+
+    /* Lists */
+    ul {
+        list-style: none;
+        margin-top: 10px;
+        color: white;
+    }
+    .footer-news ul li a{
+        color: white;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        color: white;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+    ul li a:hover {
+        color: red;
+    }
+         .footer-links ul li a:hover{
+        color: red;
+    }
+       .footer-links ul li a{
+        color: white;
+    }
+
+    /* Contact Info */
+    .contact p {
+        color: #ccc;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        margin-top: 10px;
+    }
+
+    .newsletter input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 70%;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .newsletter button {
+        background-color: red;
+        border: none;
+        padding: 10px 15px;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 0 3px 3px 0;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: none;
+        background-color: #222;
+        color: #fff;
+        padding: 8px 10px;
+        border-radius: 3px;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+
+    .social-icons a:hover {
+        background-color: red;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+        footer {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+        footer {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .newsletter input {
+            width: 60%;
+        }
+    }
+
+  </style>
+</head>
+<body>
+    <!--Header section start-->
+    <header class="head-opt">
+        <ul id="ul">
+            <li> 📞+91 9532085505 </li>
+            <li> 🕛Mon-Fri 8:00 to 2:00</li>
+            <li>📩info@infopark.co.in</li>
+        </ul>
+    </header>
+
+    <!--Header section end-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myHeader">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="photo\logo.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">BCA</a></li>
+                            <li><a class="dropdown-item" href="#">BBA</a></li>
+                            <li><a class="dropdown-item" href="#">BCA plus diploma</a></li>
+                            <li><a class="dropdown-item" href="#">'O' lavel</a></li>
+                            <li><a class="dropdown-item" href="#">DCA</a></li>
+                            <li><a class="dropdown-item" href="#">CCC</a></li>
+                            <li><a class="dropdown-item" href="#">MCA</a></li>
+                            <li><a class="dropdown-item" href="#">MBA</a></li>
+                            <li><a class="dropdown-item" href="#">MBA plus diploma</a></li>
+                            <li><a class="dropdown-item" href="#">PGDBM</a></li>
+                            <li><a class="dropdown-item" href="#">PGDCA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about">
+        
+    </div>
+
+  <div class="container">
+    <!-- Left Side -->
+    <div class="left">
+      <h1>WELCOME TO <span>INFOPARK</span></h1>
+      <p>Here at Infopark, creativity and opportunity collide! Infopark has been the leading center for business and technology for 25 years, providing an unmatched atmosphere for expansion and improvement. Whether you're an established business looking to grow or a startup hoping to upend the market, Infopark has the infrastructure, resources, and community support to make it happen. Enter a thriving environment where success is driven by innovation and teamwork, and become a part of a dynamic network that is influencing business and technology in the future.</p>
+
+      <h3>MISSION:</h3>
+      <p>Our mission is to foster a thriving ecosystem that nurtures innovation, supports business growth, and cultivates a collaborative community dedicated to technological advancement and economic development.</p>
+
+      <h3>VISION:</h3>
+      <p>Our vision is to be the leading global technology and business hub, driving transformative change and creating endless opportunities for entrepreneurs, companies, and communities worldwide.</p>
+
+      <p>Join us at Infopark and unlock your potential in the world of innovation. Embark on a journey into the future by delving into a realm of endless opportunities through education and networking. Together, we are shaping the next 25 years of technological excellence.</p>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
+      <h2>INFOPARK: <span>THE PINNACLE OF EDUCATION IN ORAI</span></h2>
+      <p>In the small area of ORAI, a revolutionary transformation in computer education has taken place. Over the past 25 years, this remarkable initiative has empowered nearly 50,000 students with cutting-edge computer skills. These students have gone on to secure prestigious positions in top companies, demonstrating the profound impact of ORAI's commitment to educational excellence. This unprecedented achievement highlights ORAI as a beacon of innovation and success in the realm of computer education, significantly shaping the future of its graduates and the industry.</p>
+
+      <p>Since its inception in 1997, Infopark has established itself as the premier education center in Orai, bringing a new wave of development to the city. As a leading hub for technology and business education, Infopark offers an unmatched learning environment that fosters growth and innovation. With its state-of-the-art facilities, experienced faculty, and comprehensive educational programs, Infopark stands out as the best education center in Orai.</p>
+
+      <p>Over the past two and a half decades, Infopark has introduced advanced learning methodologies and cutting-edge technology to Orai, providing students with opportunities that were previously unavailable. This influx of modern educational practices has significantly elevated the standard of education in the region, aligning it with global benchmarks.</p>
+    </div>
+  </div>
+  
+
+  <!-- Footer start -->
+<footer>
+  <div class="footer-about">
+        <img src="photo/logo.png" alt="Infopark Logo">
+        <p>
+            Join us at Infopark and unlock your potential in the world of innovation. 
+            Embark on a journey into the future by delving into a realm of endless opportunities 
+            through education and networking. Together, we continue to shape the next 25 years 
+            of innovation and success.
+        </p>
+        <a href="#">» Read more</a>
+
+        <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Latest News -->
+    <div class="footer-news">
+        <h3 class="footer-title">Latest News</h3>
+        <ul>
+            <li><a href="#">BCA</a></li>
+            <li><a href="#">BBA</a></li>
+            <li><a href="#">BCA Plus Diploma</a></li>
+            <li><a href="#">‘O’ Level</a></li>
+            <li><a href="#">DCA</a></li>
+            <li><a href="#">CCC</a></li>
+            <li><a href="#">MCA</a></li>
+            <li><a href="#">MBA</a></li>
+            <li><a href="#">MBA Plus Diploma</a></li>
+            <li><a href="#">PGDBM</a></li>
+            <li><a href="#">PGDCA</a></li>
+        </ul>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-links">
+        <h3 class="footer-title">Useful Links</h3>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Quick Contact -->
+    <div class="contact">
+        <h3 class="footer-title">Quick Contact</h3>
+        <p>📞 +91 9532085505</p>
+        <p>✉ info@infopark.co.in</p>
+        <p>📍 Tulsi Nagar Near City Center Station Road Orai Dist. Jalaun (U.P) Pin Code - 285001</p>
+
+        <div class="newsletter">
+            <p>Subscribe to our newsletter</p>
+            <input type="email" placeholder="Your Email">
+            <button>✈</button>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var header = document.getElementById("myHeader");
+    if (!header) return;
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            document.body.style.paddingTop = header.offsetHeight + "px";
+        } else {
+            header.classList.remove("sticky");
+            document.body.style.paddingTop = 0;
+        }
+    }
+
+    window.addEventListener('scroll', myFunction);
+    window.addEventListener('resize', function () {
+        header.classList.remove('sticky');
+        document.body.style.paddingTop = 0;
+        sticky = header.offsetTop;
+        myFunction();
+    });
+
+    myFunction();
+});
+</script>
+</body>
+</html>

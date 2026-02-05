@@ -1,0 +1,517 @@
+/* Header section start */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "open sans" sans-serif;  
+    list-style: none;
+    box-sizing: border-box;
+ 
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.sticky + .content {
+    padding-top: 102px; /* Adjust based on header height*/
+}
+.head-opt {
+   background-color:  #edb612;
+   margin: none;
+   padding: none;
+}
+
+#ul{
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem;
+}
+/* Header section closed */
+
+
+
+/* navigation bar css start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 108, 22);
+    padding: 1rem;
+    position: sticky;
+    
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-family: impact;
+}
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+    
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(12, 12, 12);
+}
+
+.nav-links .dropdown {
+    /* Scoped to .nav-links to avoid colliding with Bootstrap's .dropdown */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(238, 108, 22);
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.nav-links .dropdown li {
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links .dropdown a {
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Navigation bar closed */
+
+
+/* slider starts */
+ .carousel-item img {
+            height: 600px; 
+            object-fit: cover; 
+        }
+        
+        .carousel-container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+
+        /* slider end */
+
+        /* welcome page start */
+.main{
+    background-color: white;
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: auto;
+}
+.about{
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+.about h3{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    text-decoration: underline solid red;
+}
+.about   span{
+    color: red;
+    /* display: flex; */
+    
+}
+
+    .form-container{
+      width: 450px;
+      height: 60%;
+      background: #d81332;
+      padding: 30px;
+      margin: 50px auto;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .form-container h2{
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .form-container input,
+    .form-container textarea{
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    .row{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .row input{
+      width: 48%;
+    }
+
+    .btn{
+      width: 100%;
+      padding: 12px;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    
+    .read{
+        display: flex;
+    }
+    .read img{
+        height: 100px;
+    }
+    
+    /* Welcome page end ;*/
+
+    /* Footer start */
+
+  
+    .main-footer{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 500px;
+        background-color: red;
+        
+    }
+    .part1{
+        background-color:red;
+        width: 40%;
+        height: 600px;
+        color: white;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .part1 h2{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #img{
+         width: 100%;
+        height: 600px;
+    }
+    .values h5{
+        text-align: center;
+    }
+
+    .values p{
+        text-align: center;
+        text-align: justify;
+        width: 230px;
+        /* text-wrap-mode: nowrap; */
+        text-spacing-trim:space-all;
+
+  
+
+    }
+    #par{
+        text-align: justify;
+     margin-left: 150px;
+    }
+
+    .teachers h5{
+        text-align: center;
+    }
+    .teachers p{
+        text-align: center;
+        text-align: justify;
+        width: 200px;
+        
+
+    }
+  
+
+    .services h5{
+        text-align: center;
+    }
+
+    .services p{
+        text-align: center;
+        text-align: justify;
+        width: 200px;
+    }
+    .paragraph{
+        padding: 10px;
+    }
+
+    /* Footer part1 */
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+      footer {
+      margin-top: 40px;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    footer {
+      background: #111;
+      color: #ddd;
+      padding: 50px 80px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-top: 3px solid #ff0000;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin: 20px;
+    }
+
+    .footer-logo img {
+      width: 140px;
+      margin-bottom: 20px;
+    }
+
+    .footer-about p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-about a {
+      color: #ff3333;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-about a:hover {
+      text-decoration: none;
+      color: yellow;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    h3::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: #ff0000;
+      margin-top: 5px;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    ul li a {
+      color: #ccc;
+      ;
+      font-size: 16px;
+
+    }
+
+    ul li a:hover {
+      color: white;
+      background-color: red;
+      border-radius: 30px;
+     
+      box-sizing: border-box;
+      
+      
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .newsletter input {
+      width: 70%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .newsletter button {
+      padding: 10px 15px;
+      border: none;
+      background: #ff3333;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .newsletter button:hover {
+      background: yellow;
+        
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background: #222;
+      color: #fff;
+      text-align: center;
+      line-height: 35px;
+      border-radius: 3px;
+      margin-right: 8px;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    .social-icons a:hover {
+      background: #ff3333;
+    }
+
+    @media(max-width: 900px) {
+      footer {
+        flex-direction: column;
+        padding: 40px;
+      }
+    }
+
+    /* new  nav bar code here  */
+
+    
+.navbar-collapse{
+          display: flex;
+            align-items: end;
+            justify-content: end;
+            margin-right  : 30px;
+            gap: 70px;
+        }
+        .navbar-collapse a{
+          margin: 0px 10px ;
+        }
+        .active{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /* accent-color: red; */
+        }        
+        .dropdown-item a{
+          margin-left: 80px;
+        }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #000;
+        }
+     
+
+        .navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: wheat;
+    background: tomato;
+    border-radius: 30px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
+    color: wheat;
+    background: tomato;
+    border-radius: 30px;
+}
+   .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* Optional: remove spacing between link and dropdown */
+    }
+
+    /* Optional: make hover transition smoother */
+    .dropdown-menu .dropdown-item{
+      transition: all 0.2s ease;
+        margin: 0px;
+/*         background: red; */
+        position: relative;
+    }
+    #navbar{
+      position: sticky;
+    }
+
+    /* ADDED: sticky header styles */
+        #myHeader {
+            width: 100%;
+            background: #fff; /* ensure visible when fixed */
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+
+
+        .second-foot{
+          width: 100%;
+          height: 50px;
+          background-color: black;
+        }
+         
+       /* Footer end */
+
+       /* All things are ended hare. I wish ypu like my code.♥️  */
